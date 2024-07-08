@@ -18,11 +18,11 @@ import java.io.Serializable;
  */
 
 @Data
-@TableName("music_upload")
+@TableName("User_upload")
 public class UserUpload extends Model<UserUpload> {
     @TableId("id")
     //主键
-    private Integer id;
+    private String id;
     //关联用户id
     private String userId;
     //下载音乐名称

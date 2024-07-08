@@ -3,6 +3,7 @@ package com.wode.bangertong.mapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.wode.bangertong.entity.Dicts;
 import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Repository;
 
 
 /**
@@ -11,6 +12,7 @@ import org.apache.ibatis.annotations.Mapper;
  * @author makejava
  * @since 2024-07-05 17:02:13
  */
+@Repository
 public interface DictDao extends BaseMapper<Dicts> {
 
 }

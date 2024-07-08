@@ -1,4 +1,4 @@
-package com.wode.bangertong.service.impl;
+package com.wode.bangertong.service.Impl;
 
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

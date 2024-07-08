@@ -7,7 +7,7 @@ import com.baomidou.mybatisplus.extension.api.ApiController;
 import com.baomidou.mybatisplus.extension.api.R;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 
-import com.mysql.cj.util.StringUtils;
+import com.mysql.jdbc.StringUtils;
 import com.wode.bangertong.dto.AudioTypeDto;
 import com.wode.bangertong.entity.Audio;
 import com.wode.bangertong.entity.UserUpload;
@@ -69,7 +69,7 @@ public class AudioController extends ApiController {
      * @param id
      * @return
      */
-    @PostMapping("/uploadMusic")
+    @GetMapping("/uploadMusic")
     public void uploadMusic(@Validated Integer id, HttpServletRequest request, HttpServletResponse response){
         if(null == id) {
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
