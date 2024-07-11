@@ -28,7 +28,7 @@ import java.util.stream.Collectors;
  * @since 2024-07-06 17:50:46
  */
 @RestController
-@RequestMapping("userUpload")
+@RequestMapping("/userUpload")
 public class UserUploadController extends ApiController {
     /**
      * 服务对象

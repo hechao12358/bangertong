@@ -37,7 +37,7 @@ import java.util.zip.ZipOutputStream;
  * @since 2024-07-05 17:02:11
  */
 @RestController
-@RequestMapping("audio")
+@RequestMapping("/audio")
 @Slf4j
 public class AudioController extends ApiController {
     /**
