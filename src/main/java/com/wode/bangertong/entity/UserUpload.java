@@ -38,11 +38,11 @@ public class UserUpload extends Model<UserUpload> {
     //是否下载成功（0成功 1 失败）
     private Integer isSucceed;
     //创建时间
-    private LocalDateTime createTime;
+    private Date createTime;
     //创建人
     private String createBy;
     //修改时间
-    private LocalDateTime updateTime;
+    private Date updateTime;
     //修改人
     private String updateBy;
 }

@@ -101,8 +101,8 @@ public class AudioController extends ApiController {
         userUpload.setIsSucceed(0);
         userUpload.setCreateBy("system");
         userUpload.setUpdateBy("system");
-        userUpload.setCreateTime(LocalDateTime.now());
-        userUpload.setUpdateTime(LocalDateTime.now());
+        userUpload.setCreateTime(new Date());
+        userUpload.setUpdateTime(new Date());
         userUploadService.save(userUpload);
 
         //下载音乐
@@ -115,6 +115,9 @@ public class AudioController extends ApiController {
             File file = new File(url);
             if (!file.exists()) {
                 log.info("无该路径文件：{}",url);
+                //下载失败修改下载表状态为失败状态
+                userUpload.setIsSucceed(1);
+                userUploadService.saveOrUpdate(userUpload);
                 response.setStatus(HttpServletResponse.SC_NOT_FOUND);
                 return;
             }

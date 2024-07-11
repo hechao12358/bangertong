@@ -24,8 +24,8 @@ public class Dicts {
     //名称
     private String name;
     //排序
-    private Integer order;
+    private Integer sorted;
     //是否删除（1是 0 否）
-    private Integer idDelete;
+    private Integer isDelete;
 }
 

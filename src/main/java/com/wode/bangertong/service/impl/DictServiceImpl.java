@@ -37,10 +37,10 @@ public class DictServiceImpl extends ServiceImpl<DictDao, Dicts> implements Dict
     public List<Dicts> selectMusic() {
         List<Dicts> list = this.list(Wrappers.<Dicts>lambdaQuery()
                 .eq(Dicts::getType, DictContants.MUSIC_TYPE)
-                .eq(Dicts::getIdDelete, 0));
+                .eq(Dicts::getIsDelete, 0));
         if ( null != list && !list.isEmpty()) {
             list = list.stream()
-                    .sorted(Comparator.comparing(Dicts::getOrder)).collect(Collectors.toList());
+                    .sorted(Comparator.comparing(Dicts::getSorted)).collect(Collectors.toList());
         }
         return list;
     }

@@ -8,5 +8,5 @@ package com.wode.bangertong.common;
  */
 public class DictContants {
 
-    public static final String MUSIC_TYPE = "MUSIC_TYPE";
+    public static final String MUSIC_TYPE = "MUSIC_DRUG";
 }
