@@ -1,7 +1,7 @@
 package com.wode.bangertong.controller;
 
-import com.wode.bangertong.entity.Dicts;
-import com.wode.bangertong.model.Result;
+import com.wode.bangertong.common.entity.Dicts;
+import com.wode.bangertong.common.model.Result;
 import com.wode.bangertong.service.DictService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,7 +18,7 @@ import java.util.List;
  * @Description：
  */
 @RestController
-@RequestMapping("/dict")
+@RequestMapping("/bangertong/dict")
 public class DictController {
 
     @Autowired

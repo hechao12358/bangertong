@@ -1,7 +1,7 @@
 package com.wode.bangertong.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.wode.bangertong.entity.Audio;
+import com.wode.bangertong.common.entity.Audio;
 import org.springframework.stereotype.Repository;
 
 

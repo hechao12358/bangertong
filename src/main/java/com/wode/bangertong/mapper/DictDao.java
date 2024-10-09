@@ -1,8 +1,7 @@
 package com.wode.bangertong.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.wode.bangertong.entity.Dicts;
-import org.apache.ibatis.annotations.Mapper;
+import com.wode.bangertong.common.entity.Dicts;
 import org.springframework.stereotype.Repository;
 
 

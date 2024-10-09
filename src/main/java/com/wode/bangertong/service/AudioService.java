@@ -1,8 +1,9 @@
 package com.wode.bangertong.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.wode.bangertong.dto.AudioTypeDto;
-import com.wode.bangertong.entity.Audio;
+import com.wode.bangertong.common.dto.AudioTypeDto;
+import com.wode.bangertong.common.entity.Audio;
+import com.wode.bangertong.common.model.Result;
 
 import java.util.List;
 
@@ -21,5 +22,19 @@ public interface AudioService extends IService<Audio> {
      * @return
      */
     List<Audio> selectMusicByType(AudioTypeDto dto);
+
+    Result selectAudioByType(String token, String type);
+
+    /**
+     * 查询所有音乐、
+     * @return
+     */
+    Result selectMusicAll(String token);
+
+    /**
+     * 音药调整
+     * @return
+     */
+    Result updateAudioStatus(String token, List<Audio> audios);
 }
 

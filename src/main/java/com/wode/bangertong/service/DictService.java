@@ -1,7 +1,7 @@
 package com.wode.bangertong.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.wode.bangertong.entity.Dicts;
+import com.wode.bangertong.common.entity.Dicts;
 
 import java.util.List;
 
